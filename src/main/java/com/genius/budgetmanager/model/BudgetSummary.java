@@ -1,35 +1,71 @@
+
 package com.genius.budgetmanager.model;
 
 public class BudgetSummary {
 
-    private Long campaignId;
-    private String campaignName;
     private String client;
-    private Double totalBudget;
-    private Double spent;
-    private Double remaining;
-    private Double percentageUsed;
+    private int totalCampaigns;
+    private int activeCampaigns;
+    private double totalBudget;
+    private double totalSpent;
+    private double totalAvailable;
+    private double consumptionPercentage;
 
     public BudgetSummary() {}
 
-    public Long getCampaignId() { return campaignId; }
-    public void setCampaignId(Long campaignId) { this.campaignId = campaignId; }
+    public String getClient() {
+        return client;
+    }
 
-    public String getCampaignName() { return campaignName; }
-    public void setCampaignName(String campaignName) { this.campaignName = campaignName; }
+    public void setClient(String client) {
+        this.client = client;
+    }
 
-    public String getClient() { return client; }
-    public void setClient(String client) { this.client = client; }
+    public int getTotalCampaigns() {
+        return totalCampaigns;
+    }
 
-    public Double getTotalBudget() { return totalBudget; }
-    public void setTotalBudget(Double totalBudget) { this.totalBudget = totalBudget; }
+    public void setTotalCampaigns(int totalCampaigns) {
+        this.totalCampaigns = totalCampaigns;
+    }
 
-    public Double getSpent() { return spent; }
-    public void setSpent(Double spent) { this.spent = spent; }
+    public int getActiveCampaigns() {
+        return activeCampaigns;
+    }
 
-    public Double getRemaining() { return remaining; }
-    public void setRemaining(Double remaining) { this.remaining = remaining; }
+    public void setActiveCampaigns(int activeCampaigns) {
+        this.activeCampaigns = activeCampaigns;
+    }
 
-    public Double getPercentageUsed() { return percentageUsed; }
-    public void setPercentageUsed(Double percentageUsed) { this.percentageUsed = percentageUsed; }
+    public double getTotalBudget() {
+        return totalBudget;
+    }
+
+    public void setTotalBudget(double totalBudget) {
+        this.totalBudget = totalBudget;
+    }
+
+    public double getTotalSpent() {
+        return totalSpent;
+    }
+
+    public void setTotalSpent(double totalSpent) {
+        this.totalSpent = totalSpent;
+    }
+
+    public double getTotalAvailable() {
+        return totalAvailable;
+    }
+
+    public void setTotalAvailable(double totalAvailable) {
+        this.totalAvailable = totalAvailable;
+    }
+
+    public double getConsumptionPercentage() {
+        return consumptionPercentage;
+    }
+
+    public void setConsumptionPercentage(double consumptionPercentage) {
+        this.consumptionPercentage = consumptionPercentage;
+    }
 }
